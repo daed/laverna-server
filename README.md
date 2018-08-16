@@ -34,7 +34,7 @@ $ npm install
 ```
 
 3. Configure the signal server
-Copy .env.example to .env and change configs in the new file.
+Copy env.example to env and change configs in the new file.
 
 4. Start the server
 

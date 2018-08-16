@@ -3,7 +3,9 @@
  * @file
  * @license MPL-2.0
  */
-require('dotenv').config({path: './env'});
+
+console.log("Path: " + __dirname);
+require('dotenv').config({path: __dirname + "/env"});
 const express  = require('express');
 const mongoose = require('mongoose');
 const deb      = require('debug');
@@ -21,6 +23,7 @@ if (process.env.NODE_ENV === 'development') {
     deb.enable('lav:*');
 }
 
+console.log(__dirname);
 if (!process.env.JWT_SECRET) {
     // eslint-disable-next-line
     console.log('Please configure the server by copying .env.example file to .env');

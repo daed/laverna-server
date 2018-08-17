@@ -3,6 +3,7 @@ _dev
 
 # Ignore environment variables
 .env
+env
 
 # Created by https://www.gitignore.io/api/node
 
@@ -35,6 +36,8 @@ coverage
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
+release
+
 
 # Dependency directories
 node_modules

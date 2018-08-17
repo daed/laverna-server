@@ -6,7 +6,7 @@
  */
 const env    = process.env;
 const denv   = env.NODE_ENV || 'development';
-const dbHost = env.DB_HOST  || 'localhost';
+const dbHost = env.DB_HOST  || '127.0.0.1';
 const dbName = denv === 'production' ? 'laverna' : `lav-${denv}`;
 
 const {DB_USER, DB_PASS} = env;

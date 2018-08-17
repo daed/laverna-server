@@ -4,7 +4,7 @@
  * @license MPL-2.0
  */
 
-console.log("Path: " + __dirname);
+console.log("Path: " + __dirname + "/env");
 require('dotenv').config({path: __dirname + "/env"});
 const express  = require('express');
 const mongoose = require('mongoose');
@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === 'development') {
 console.log(__dirname);
 if (!process.env.JWT_SECRET) {
     // eslint-disable-next-line
-    console.log('Please configure the server by copying .env.example file to .env');
+    console.log('Please configure the server by copying env.example file to env');
     process.exit(1);
 }
 
